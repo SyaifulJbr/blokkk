@@ -54,7 +54,7 @@ export default async function CarsPage({ params }: { params: { locale: string } 
                   </div>
                 </div>
 
-                {/* Car Details */}
+                {/* Car Detail */}
                 <div className="p-6">
                   <div className="flex items-start justify-between mb-4">
                     <div>
