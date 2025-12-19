@@ -4,30 +4,12 @@ $ next dev
   - Environments: .env
 
  ✓ Starting...
- ✓ Ready in 2.8s
- ○ Compiling / ...
- ✓ Compiled / in 4.1s (460 modules)
- GET / 307 in 4537ms
- ○ Compiling /[locale] ...
- ✓ Compiled /[locale] in 2.4s (671 modules)
- GET /en 200 in 3351ms
- GET /en 200 in 95ms
- ⨯ src/app/[locale]/cars/page.tsx
-You cannot have two parallel pages that resolve to the same path. Please check /[locale]/(tanian)/cars/page and /[locale]/cars/page. Refer to the route group docs for more information: https://nextjs.org/docs/app/building-your-application/routing/route-groups
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+ ✓ Ready in 3s
  ○ Compiling /[locale]/cars ...
- ⨯ src/app/[locale]/(tanian)/cars/page.tsx
-You cannot have two parallel pages that resolve to the same path. Please check /[locale]/(tanian)/cars/page and /[locale]/cars/page. Refer to the route group docs for more information: https://nextjs.org/docs/app/building-your-application/routing/route-groups
- ⨯ src/app/[locale]/(tanian)/cars/page.tsx
-You cannot have two parallel pages that resolve to the same path. Please check /[locale]/(tanian)/cars/page and /[locale]/cars/page. Refer to the route group docs for more information: https://nextjs.org/docs/app/building-your-application/routing/route-groups
- ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
- ⨯ src/app/[locale]/(tanian)/cars/page.tsx
-You cannot have two parallel pages that resolve to the same path. Please check /[locale]/(tanian)/cars/page and /[locale]/cars/page. Refer to the route group docs for more information: https://nextjs.org/docs/app/building-your-application/routing/route-groups
- GET /en/cars 500 in 5299ms
-<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/home/z/my-project/.next/cache/webpack/client-development-fallback/0.pack.gz_' -> '/home/z/my-project/.next/cache/webpack/client-development-fallback/0.pack.gz'
- GET /en 500 in 396ms
- ⨯ src/app/[locale]/(tanian)/cars/page.tsx
-You cannot have two parallel pages that resolve to the same path. Please check /[locale]/(tanian)/cars/page and /[locale]/cars/page. Refer to the route group docs for more information: https://nextjs.org/docs/app/building-your-application/routing/route-groups
- ⨯ src/app/[locale]/(tanian)/cars/page.tsx
-You cannot have two parallel pages that resolve to the same path. Please check /[locale]/(tanian)/cars/page and /[locale]/cars/page. Refer to the route group docs for more information: https://nextjs.org/docs/app/building-your-application/routing/route-groups
- GET /id 500 in 404ms
- GET / 500 in 410ms
+ ✓ Compiled /[locale]/cars in 5.9s (664 modules)
+ GET /en/cars 200 in 7381ms

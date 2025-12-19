@@ -25,7 +25,7 @@ export default function AdminCarsPage(){
 
   async function fetchCars(){
     try {
-      const res = await fetch('/api/admin/cars')
+      const res = await fetch('/api/admin/cars?XTransformPort=3000')
       const data = await res.json()
       setCars(data.cars || [])
     } catch (err) {
@@ -39,7 +39,7 @@ export default function AdminCarsPage(){
     e.preventDefault()
     try {
       const method = editingId ? 'PUT' : 'POST'
-      const url = editingId ? `/api/admin/cars/${editingId}` : '/api/admin/cars'
+      const url = editingId ? `/api/admin/cars/${editingId}?XTransformPort=3000` : '/api/admin/cars?XTransformPort=3000'
       const res = await fetch(url, {
         method,
         headers: { 'Content-Type': 'application/json' },
@@ -66,7 +66,7 @@ export default function AdminCarsPage(){
   async function handleDelete(id: string){
     if (confirm('Yakin ingin hapus?')){
       try {
-        const res = await fetch(`/api/admin/cars/${id}`, { method: 'DELETE' })
+        const res = await fetch(`/api/admin/cars/${id}?XTransformPort=3000`, { method: 'DELETE' })
         if (!res.ok) throw new Error('Gagal hapus')
         await fetchCars()
       } catch (err) {
