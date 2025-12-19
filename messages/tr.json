@@ -5,9 +5,20 @@
   "Contact": "İletişim",
   "Login": "Giriş Yap",
   "Register": "Kayıt Ol",
-  "Welcome": "GiorBaliTour'a Hoşgeldiniz",
+  "Welcome": "'a Hoşgeldiniz",
   "FeaturedCars": "Öne Çıkan Araçlar",
   "CustomerReviews": "Müşteri Yorumları",
-  "LeaveReview": "Yorum Bırak",
-  "BookNow": "Şimdi Rezervasyon Yap"
+  "LeaveReview": "Deneyiminizi Paylaşın",
+  "BookNow": "Şimdi Rezervasyon Yap",
+  "NameOptional": "Ad (İsteğe Bağlı)",
+  "Rating": "Değerlendirme",
+  "Comment": "Yorum",
+  "SubmitReview": "Yorumu Gönder",
+  "Submitting": "Gönderiliyor...",
+  "ReviewSubmitted": "Yorum başarıyla gönderildi!",
+  "YourNamePlaceholder": "Adınız veya takma adınız",
+  "ShareExperiencePlaceholder": "GiorBaliTour ile deneyiminizi paylaşın...",
+  "YourReviewHelps": "Yorumlarınız hizmetimizi iyileştirmemize yardımcı olur",
+  "Characters": "karakter",
+  "MaxCharacters": "En fazla 500 karakter"
 }

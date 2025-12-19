@@ -5,9 +5,20 @@
   "Contact": "Contato",
   "Login": "Entrar",
   "Register": "Registrar",
-  "Welcome": "Bem-vindo ao GiorBaliTour",
+  "Welcome": "Bem-vindo ao",
   "FeaturedCars": "Carros em Destaque",
   "CustomerReviews": "Avaliações de Clientes",
-  "LeaveReview": "Deixar uma Avaliação",
-  "BookNow": "Reservar Agora"
+  "LeaveReview": "Compartilhe sua Experiência",
+  "BookNow": "Reservar Agora",
+  "NameOptional": "Nome (Opcional)",
+  "Rating": "Avaliação",
+  "Comment": "Comentário",
+  "SubmitReview": "Enviar Avaliação",
+  "Submitting": "Enviando...",
+  "ReviewSubmitted": "Avaliação enviada com sucesso!",
+  "YourNamePlaceholder": "Seu nome ou apelido",
+  "ShareExperiencePlaceholder": "Compartilhe sua experiência com a GiorBaliTour...",
+  "YourReviewHelps": "Sua avaliação nos ajuda a melhorar nosso serviço",
+  "Characters": "caracteres",
+  "MaxCharacters": "Máximo 500 caracteres"
 }

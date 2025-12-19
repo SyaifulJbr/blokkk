@@ -44,7 +44,7 @@ export default function ReviewForm(){
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
             </div>
-            <p className="text-accent-green font-medium">Review submitted successfully!</p>
+            <p className="text-accent-green font-medium">{t('ReviewSubmitted')}</p>
           </div>
         </div>
       )}
@@ -52,18 +52,18 @@ export default function ReviewForm(){
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="space-y-2">
-            <label className="block text-sm font-medium text-secondary">Name (Optional)</label>
+            <label className="block text-sm font-medium text-secondary">{t('NameOptional')}</label>
             <input 
               type="text" 
               value={userName} 
               onChange={e => setUserName(e.target.value)} 
-              placeholder="Your name or nickname"
+              placeholder={t('YourNamePlaceholder')}
               className="input-modern w-full"
             />
           </div>
           
           <div className="space-y-2">
-            <label className="block text-sm font-medium text-secondary">Rating</label>
+            <label className="block text-sm font-medium text-secondary">{t('Rating')}</label>
             <div className="flex items-center space-x-2">
               {[1,2,3,4,5].map(star => (
                 <button 
@@ -87,20 +87,20 @@ export default function ReviewForm(){
         </div>
 
         <div className="space-y-2">
-          <label className="block text-sm font-medium text-secondary">Comment</label>
+          <label className="block text-sm font-medium text-secondary">{t('Comment')}</label>
           <textarea 
             value={comment} 
             onChange={e => setComment(e.target.value)} 
-            placeholder="Share your experience with GiorBaliTour..."
+            placeholder={t('ShareExperiencePlaceholder')}
             className="input-modern w-full h-32 resize-none"
             required
           />
           <div className="flex justify-between items-center">
             <p className="text-xs text-secondary">
-              {comment.length}/500 characters
+              {comment.length}/500 {t('Characters')}
             </p>
             {comment.length > 500 && (
-              <p className="text-xs text-accent-yellow">Maximum 500 characters</p>
+              <p className="text-xs text-accent-yellow">{t('MaxCharacters')}</p>
             )}
           </div>
         </div>
@@ -120,7 +120,7 @@ export default function ReviewForm(){
 
         <div className="flex items-center justify-between">
           <p className="text-sm text-secondary">
-            Your review helps us improve our service
+            {t('YourReviewHelps')}
           </p>
           <button 
             type="submit" 
@@ -130,14 +130,14 @@ export default function ReviewForm(){
             {loading ? (
               <>
                 <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
-                <span>Submitting...</span>
+                <span>{t('Submitting')}</span>
               </>
             ) : (
               <>
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                 </svg>
-                <span>Submit Review</span>
+                <span>{t('SubmitReview')}</span>
               </>
             )}
           </button>

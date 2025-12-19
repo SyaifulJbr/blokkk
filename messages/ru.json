@@ -5,9 +5,20 @@
   "Contact": "Контакты",
   "Login": "Вход",
   "Register": "Регистрация",
-  "Welcome": "Добро пожаловать в GiorBaliTour",
+  "Welcome": "Добро пожаловать в",
   "FeaturedCars": "Рекомендуемые автомобили",
   "CustomerReviews": "Отзывы клиентов",
-  "LeaveReview": "Оставить отзыв",
-  "BookNow": "Забронировать сейчас"
+  "LeaveReview": "Поделиться опытом",
+  "BookNow": "Забронировать сейчас",
+  "NameOptional": "Имя (необязательно)",
+  "Rating": "Рейтинг",
+  "Comment": "Комментарий",
+  "SubmitReview": "Отправить отзыв",
+  "Submitting": "Отправка...",
+  "ReviewSubmitted": "Отзыв успешно отправлен!",
+  "YourNamePlaceholder": "Ваше имя или никнейм",
+  "ShareExperiencePlaceholder": "Поделитесь вашим опытом с GiorBaliTour...",
+  "YourReviewHelps": "Ваш отзыв помогает нам улучшить сервис",
+  "Characters": "символов",
+  "MaxCharacters": "Максимум 500 символов"
 }

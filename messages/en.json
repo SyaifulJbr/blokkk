@@ -5,10 +5,21 @@
   "Contact": "Contact",
   "Login": "Login",
   "Register": "Register",
-  "Welcome": "Welcome to GiorBaliTour",
+  "Welcome": "Welcome to",
   "FeaturedCars": "Featured Cars",
   "CustomerReviews": "Customer Reviews",
-  "LeaveReview": "Leave a Review",
-  "BookNow": "Book Now"
+  "LeaveReview": "Share Your Experience",
+  "BookNow": "Book Now",
+  "NameOptional": "Name (Optional)",
+  "Rating": "Rating",
+  "Comment": "Comment",
+  "SubmitReview": "Submit Review",
+  "Submitting": "Submitting...",
+  "ReviewSubmitted": "Review submitted successfully!",
+  "YourNamePlaceholder": "Your name or nickname",
+  "ShareExperiencePlaceholder": "Share your experience with GiorBaliTour...",
+  "YourReviewHelps": "Your review helps us improve our service",
+  "Characters": "characters",
+  "MaxCharacters": "Maximum 500 characters"
 }
 

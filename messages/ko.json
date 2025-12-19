@@ -5,9 +5,20 @@
   "Contact": "연락처",
   "Login": "로그인",
   "Register": "등록",
-  "Welcome": "GiorBaliTour에 오신 것을 환영합니다",
+  "Welcome": "에 오신 것을 환영합니다",
   "FeaturedCars": "추천 자동차",
   "CustomerReviews": "고객 리뷰",
-  "LeaveReview": "리뷰 남기기",
-  "BookNow": "지금 예약"
+  "LeaveReview": "경험 공유하기",
+  "BookNow": "지금 예약",
+  "NameOptional": "이름 (선택사항)",
+  "Rating": "평점",
+  "Comment": "댓글",
+  "SubmitReview": "리뷰 제출",
+  "Submitting": "제출 중...",
+  "ReviewSubmitted": "리뷰가 성공적으로 제출되었습니다!",
+  "YourNamePlaceholder": "이름 또는 별명",
+  "ShareExperiencePlaceholder": "GiorBaliTour에서의 경험을 공유하세요...",
+  "YourReviewHelps": "리뷰는 저희 서비스 개선에 도움이 됩니다",
+  "Characters": "문자",
+  "MaxCharacters": "최대 500자"
 }

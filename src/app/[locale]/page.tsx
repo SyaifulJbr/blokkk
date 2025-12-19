@@ -1,8 +1,10 @@
 import { prisma } from '@/lib/auth'
 import ReviewForm from '@/components/ui/ReviewForm'
 import Link from 'next/link'
+import { getTranslations } from 'next-intl/server'
 
 export default async function HomePage({ params }: { params: { locale: string } }){
+  const t = await getTranslations({ locale: params.locale })
   const featuredCars = await prisma.car.findMany({
     where: { isAvailable: true },
     take: 3
@@ -20,10 +22,10 @@ export default async function HomePage({ params }: { params: { locale: string } 
         <div className="absolute inset-0 bg-gradient-to-br from-accent-green/10 to-accent-yellow/10"></div>
         <div className="relative container mx-auto px-6 py-20">
           <div className="max-w-4xl mx-auto text-center fade-in">
-            <h1 className="text-5xl md:text-7xl font-bold text-gradient mb-6 leading-tight">
-              Welcome to
+              <h1 className="text-5xl md:text-7xl font-bold text-gradient mb-6 leading-tight">
+              {t('Welcome')}
               <br />
-              GiorBaliTour
+              <span>GiorBaliTour</span>
             </h1>
             <p className="text-xl md:text-2xl text-secondary mb-8 leading-relaxed">
               Professional car rental with driver included — 10 hours package includes fuel and professional driver for your perfect Bali experience.
@@ -77,7 +79,7 @@ export default async function HomePage({ params }: { params: { locale: string } 
       <section className="section-gradient py-20">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-4">Featured Cars</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-4">{t('FeaturedCars')}</h2>
             <p className="text-secondary text-lg max-w-2xl mx-auto">
               Choose from our premium selection of well-maintained vehicles perfect for your Bali adventure
             </p>
@@ -155,7 +157,7 @@ export default async function HomePage({ params }: { params: { locale: string } 
       <section className="py-20">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-4">Customer Reviews</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-4">{t('CustomerReviews')}</h2>
             <p className="text-secondary text-lg max-w-2xl mx-auto">
               See what our customers say about their experience with GiorBaliTour
             </p>
@@ -216,7 +218,7 @@ export default async function HomePage({ params }: { params: { locale: string } 
       <section className="section-gradient py-20">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-4">Share Your Experience</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-4">{t('LeaveReview')}</h2>
             <p className="text-secondary text-lg max-w-2xl mx-auto">
               Your feedback helps us improve our service and assists other travelers in making informed decisions
             </p>

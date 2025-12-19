@@ -5,9 +5,20 @@
   "Contact": "联系我们",
   "Login": "登录",
   "Register": "注册",
-  "Welcome": "欢迎来到GiorBaliTour",
+  "Welcome": "欢迎来到",
   "FeaturedCars": "精选汽车",
   "CustomerReviews": "客户评论",
-  "LeaveReview": "留下评论",
-  "BookNow": "立即预订"
+  "LeaveReview": "分享您的体验",
+  "BookNow": "立即预订",
+  "NameOptional": "姓名（可选）",
+  "Rating": "评分",
+  "Comment": "评论",
+  "SubmitReview": "提交评论",
+  "Submitting": "提交中...",
+  "ReviewSubmitted": "评论提交成功！",
+  "YourNamePlaceholder": "您的姓名或昵称",
+  "ShareExperiencePlaceholder": "分享您在GiorBaliTour的体验...",
+  "YourReviewHelps": "您的评论帮助我们改进服务",
+  "Characters": "字符",
+  "MaxCharacters": "最多500字符"
 }

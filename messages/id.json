@@ -5,10 +5,21 @@
   "Contact": "Kontak",
   "Login": "Masuk",
   "Register": "Daftar",
-  "Welcome": "Selamat datang di GiorBaliTour",
+  "Welcome": "Selamat datang di",
   "FeaturedCars": "Mobil Unggulan",
   "CustomerReviews": "Ulasan Pelanggan",
-  "LeaveReview": "Tinggalkan Ulasan",
-  "BookNow": "Pesan Sekarang"
+  "LeaveReview": "Bagikan Pengalaman Anda",
+  "BookNow": "Pesan Sekarang",
+  "NameOptional": "Nama (Opsional)",
+  "Rating": "Rating",
+  "Comment": "Komentar",
+  "SubmitReview": "Kirim Ulasan",
+  "Submitting": "Mengirim...",
+  "ReviewSubmitted": "Ulasan berhasil dikirim!",
+  "YourNamePlaceholder": "Nama atau nickname Anda",
+  "ShareExperiencePlaceholder": "Bagikan pengalaman Anda dengan GiorBaliTour...",
+  "YourReviewHelps": "Ulasan Anda membantu kami meningkatkan layanan",
+  "Characters": "karakter",
+  "MaxCharacters": "Maksimal 500 karakter"
 }
 
