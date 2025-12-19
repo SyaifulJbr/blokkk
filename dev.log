@@ -30,3 +30,11 @@ https://nextjs.org/telemetry
  ✓ Compiled / in 314ms (373 modules)
  GET / 307 in 552ms
  ✓ Compiled in 972ms (677 modules)
+ GET /en 200 in 356ms
+ GET /en/cars 200 in 104ms
+ GET /en/cars?_rsc=6tb9v 200 in 1134ms
+ GET /en/cars?_rsc=1s0xk 200 in 1372ms
+ GET / 307 in 56ms
+ GET /en 200 in 85ms
+ ✓ Compiled in 692ms (677 modules)
+ GET /en/cars 200 in 326ms

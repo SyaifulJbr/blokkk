@@ -19,53 +19,6 @@ export default async function CarsPage({ params }: { params: { locale: string } 
           </p>
         </div>
 
-        {/* Filter Bar */}
-        <div className="mb-12">
-          <div className="card-modern p-6">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-              <div>
-                <label className="block text-sm font-medium text-secondary mb-2">Car Type</label>
-                <select className="input-modern w-full">
-                  <option>All Types</option>
-                  <option>Sedan</option>
-                  <option>SUV</option>
-                  <option>Van</option>
-                  <option>Minibus</option>
-                </select>
-              </div>
-              
-              <div>
-                <label className="block text-sm font-medium text-secondary mb-2">Capacity</label>
-                <select className="input-modern w-full">
-                  <option>Any Capacity</option>
-                  <option>2-4 Seats</option>
-                  <option>5-7 Seats</option>
-                  <option>8+ Seats</option>
-                </select>
-              </div>
-              
-              <div>
-                <label className="block text-sm font-medium text-secondary mb-2">Transmission</label>
-                <select className="input-modern w-full">
-                  <option>All Types</option>
-                  <option>Manual</option>
-                  <option>Automatic</option>
-                </select>
-              </div>
-              
-              <div>
-                <label className="block text-sm font-medium text-secondary mb-2">Max Price</label>
-                <select className="input-modern w-full">
-                  <option>Any Price</option>
-                  <option>Under 600K</option>
-                  <option>600K - 1M</option>
-                  <option>Above 1M</option>
-                </select>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* Cars Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {cars.map((car, index) => (
