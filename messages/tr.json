@@ -10,15 +10,18 @@
   "CustomerReviews": "Müşteri Yorumları",
   "LeaveReview": "Deneyiminizi Paylaşın",
   "BookNow": "Şimdi Rezervasyon Yap",
-  "NameOptional": "Ad (İsteğe Bağlı)",
-  "Rating": "Değerlendirme",
+  "NameOptional": "İsim (İsteğe Bağlı)",
+  "Rating": "Puan",
   "Comment": "Yorum",
   "SubmitReview": "Yorumu Gönder",
   "Submitting": "Gönderiliyor...",
   "ReviewSubmitted": "Yorum başarıyla gönderildi!",
   "YourNamePlaceholder": "Adınız veya takma adınız",
-  "ShareExperiencePlaceholder": "GiorBaliTour ile deneyiminizi paylaşın...",
+  "ShareExperiencePlaceholder": "GiorBaliTour'deki deneyiminizi paylaşın...",
   "YourReviewHelps": "Yorumlarınız hizmetimizi iyileştirmemize yardımcı olur",
   "Characters": "karakter",
-  "MaxCharacters": "En fazla 500 karakter"
+  "MaxCharacters": "En fazla 500 karakter",
+  "ProfessionalDescription": "Bali'de şoför içeren profesyonel araba kiralama — 10 saatlik paket, mükemmel Bali deneyiminiz için yakıt ve profesyonel sürücü içerir.",
+  "ChooseFromPremium": "Bali maceranız için mükemmel olan iyi bakımlı premium araç seçimimizden seçin.",
+  "SeeWhatCustomers": "Müşterilerin GiorBaliTour ile ilgili deneyimlerini neler söylediğini görün"
 }

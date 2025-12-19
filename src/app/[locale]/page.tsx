@@ -28,7 +28,7 @@ export default async function HomePage({ params }: { params: { locale: string } 
               <span>GiorBaliTour</span>
             </h1>
             <p className="text-xl md:text-2xl text-secondary mb-8 leading-relaxed">
-              Professional car rental with driver included — 10 hours package includes fuel and professional driver for your perfect Bali experience.
+              {t('ProfessionalDescription')}
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
@@ -81,7 +81,7 @@ export default async function HomePage({ params }: { params: { locale: string } 
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-4">{t('FeaturedCars')}</h2>
             <p className="text-secondary text-lg max-w-2xl mx-auto">
-              Choose from our premium selection of well-maintained vehicles perfect for your Bali adventure
+              {t('ChooseFromPremium')}
             </p>
           </div>
           
@@ -159,7 +159,7 @@ export default async function HomePage({ params }: { params: { locale: string } 
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-4">{t('CustomerReviews')}</h2>
             <p className="text-secondary text-lg max-w-2xl mx-auto">
-              See what our customers say about their experience with GiorBaliTour
+              {t('SeeWhatCustomers')}
             </p>
           </div>
           
@@ -220,7 +220,7 @@ export default async function HomePage({ params }: { params: { locale: string } 
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-4">{t('LeaveReview')}</h2>
             <p className="text-secondary text-lg max-w-2xl mx-auto">
-              Your feedback helps us improve our service and assists other travelers in making informed decisions
+              {t('YourReviewHelps')}
             </p>
           </div>
           

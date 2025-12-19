@@ -17,8 +17,11 @@
   "Submitting": "Отправка...",
   "ReviewSubmitted": "Отзыв успешно отправлен!",
   "YourNamePlaceholder": "Ваше имя или никнейм",
-  "ShareExperiencePlaceholder": "Поделитесь вашим опытом с GiorBaliTour...",
+  "ShareExperiencePlaceholder": "Поделитесь своим опытом с GiorBaliTour...",
   "YourReviewHelps": "Ваш отзыв помогает нам улучшить сервис",
   "Characters": "символов",
-  "MaxCharacters": "Максимум 500 символов"
+  "MaxCharacters": "Максимум 500 символов",
+  "ProfessionalDescription": "Профессиональная аренда автомобиля с водителем — пакет на 10 часов включает топливо и профессионального водителя для вашего идеального опыта на Бали.",
+  "ChooseFromPremium": "Выберите из нашего премиального набора хорошо обслуженных автомобилей, идеально подходящих для вашего приключения на Бали.",
+  "SeeWhatCustomers": "Посмотрите, что наши клиенты говорят о своем опыте с GiorBaliTour"
 }
