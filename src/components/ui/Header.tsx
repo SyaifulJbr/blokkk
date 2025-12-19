@@ -1,5 +1,6 @@
 "use client"
 import Link from 'next/link'
+import { useState } from 'react'
 import { usePathname } from 'next/navigation'
 import LanguageSwitcher from './LanguageSwitcher'
 
@@ -15,9 +16,17 @@ const translations: { [key: string]: { [key: string]: string } } = {
 }
 
 export default function Header(){
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const pathname = usePathname()
   const locale = pathname.split('/')[1] || 'en'
   const t = translations[locale] || translations.en
+
+  const menuItems = [
+    { key: 'Home', href: `/${locale}` },
+    { key: 'Cars', href: `/${locale}/cars` },
+    { key: 'About', href: `/${locale}/about` },
+    { key: 'Contact', href: `/${locale}/contact` }
+  ]
 
   return (
     <header className="sticky top-0 z-50 bg-dark-primary/95 backdrop-blur-md border-b border-dark">
@@ -36,13 +45,9 @@ export default function Header(){
           </Link>
           
           <div className="flex items-center space-x-8">
+            {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
-              {[
-                { key: 'Home', href: `/${locale}` },
-                { key: 'Cars', href: `/${locale}/cars` },
-                { key: 'About', href: `/${locale}/about` },
-                { key: 'Contact', href: `/${locale}/contact` }
-              ].map((item) => (
+              {menuItems.map((item) => (
                 <Link
                   key={item.key}
                   href={item.href}
@@ -58,14 +63,41 @@ export default function Header(){
               <LanguageSwitcher />
               
               {/* Mobile Menu Button */}
-              <button className="md:hidden p-2 text-secondary hover:text-primary transition-colors">
+              <button 
+                className="md:hidden p-2 text-secondary hover:text-primary transition-colors"
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              >
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                  {isMobileMenuOpen ? (
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  ) : (
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                  )}
                 </svg>
               </button>
             </div>
           </div>
         </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden absolute top-full left-0 right-0 bg-dark-primary border-b border-dark shadow-lg">
+            <nav className="container mx-auto px-6 py-4">
+              <div className="flex flex-col space-y-4">
+                {menuItems.map((item) => (
+                  <Link
+                    key={item.key}
+                    href={item.href}
+                    className="text-secondary hover:text-primary transition-colors duration-300 py-2 block"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {t[item.key]}
+                  </Link>
+                ))}
+              </div>
+            </nav>
+          </div>
+        )}
       </div>
     </header>
   )

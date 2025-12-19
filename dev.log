@@ -13,3 +13,20 @@ https://nextjs.org/telemetry
  ○ Compiling /[locale]/cars ...
  ✓ Compiled /[locale]/cars in 5.9s (664 modules)
  GET /en/cars 200 in 7381ms
+ ○ Compiling /[locale]/about ...
+ ✓ Compiled /[locale]/about in 748ms (658 modules)
+ GET /en/about 200 in 1616ms
+ ✓ Compiled / in 259ms (646 modules)
+ GET / 307 in 413ms
+ ✓ Compiled /[locale] in 473ms (660 modules)
+ GET /en 200 in 1305ms
+ ✓ Compiled /[locale]/cars in 191ms (373 modules)
+ ○ Compiling /[locale]/cars/[id] ...
+ ✓ Compiled /[locale]/cars/[id] in 513ms (665 modules)
+ GET / 307 in 116ms
+ GET /en 200 in 129ms
+ ○ Compiling /[locale]/contact ...
+ ✓ Compiled /[locale]/contact in 595ms (663 modules)
+ ✓ Compiled / in 314ms (373 modules)
+ GET / 307 in 552ms
+ ✓ Compiled in 972ms (677 modules)
