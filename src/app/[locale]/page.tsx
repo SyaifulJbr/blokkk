@@ -38,8 +38,8 @@ export default async function HomePage({ params }: { params: { locale: string } 
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-semibold text-primary mb-2">Driver & Fuel Included</h3>
-                <p className="text-secondary text-sm">Professional driver and premium fuel included in every package</p>
+                <h3 className="text-lg font-semibold text-primary mb-2">{t('DriverFuelIncluded')}</h3>
+                <p className="text-secondary text-sm">{t('DriverFuelDescription')}</p>
               </div>
               
               <div className="card-modern p-6 text-center">
@@ -48,8 +48,8 @@ export default async function HomePage({ params }: { params: { locale: string } 
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-semibold text-primary mb-2">10 Hours Duration</h3>
-                <p className="text-secondary text-sm">Full day service to explore Bali at your own pace</p>
+                <h3 className="text-lg font-semibold text-primary mb-2">{t('TenHoursDuration')}</h3>
+                <p className="text-secondary text-sm">{t('TenHoursDescription')}</p>
               </div>
               
               <div className="card-modern p-6 text-center">
@@ -58,17 +58,17 @@ export default async function HomePage({ params }: { params: { locale: string } 
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-semibold text-primary mb-2">Professional Service</h3>
-                <p className="text-secondary text-sm">Experienced drivers and well-maintained vehicles</p>
+                <h3 className="text-lg font-semibold text-primary mb-2">{t('ProfessionalService')}</h3>
+                <p className="text-secondary text-sm">{t('ProfessionalServiceDescription')}</p>
               </div>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href={`/${params.locale}/cars`} className="btn-modern px-8 py-4 text-lg">
-                Explore Our Fleet
+                {t('ExploreOurFleet')}
               </Link>
               <Link href={`/${params.locale}/contact`} className="btn-accent px-8 py-4 text-lg">
-                Contact Us
+                {t('ContactUs')}
               </Link>
             </div>
           </div>
@@ -98,7 +98,7 @@ export default async function HomePage({ params }: { params: { locale: string } 
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     <div className="absolute top-4 right-4">
                       <div className="bg-accent-green/90 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-medium">
-                        Available
+                        {t('Available')}
                       </div>
                     </div>
                   </div>
@@ -116,8 +116,8 @@ export default async function HomePage({ params }: { params: { locale: string } 
                           </svg>
                         </div>
                         <div>
-                          <p className="text-xs text-secondary">Capacity</p>
-                          <p className="text-sm font-semibold text-primary">{car.capacity} people</p>
+                          <p className="text-xs text-secondary">{t('Capacity')}</p>
+                          <p className="text-sm font-semibold text-primary">{car.capacity} {t('People')}</p>
                         </div>
                       </div>
                       
@@ -128,7 +128,7 @@ export default async function HomePage({ params }: { params: { locale: string } 
                           </svg>
                         </div>
                         <div>
-                          <p className="text-xs text-secondary">Transmission</p>
+                          <p className="text-xs text-secondary">{t('Transmission')}</p>
                           <p className="text-sm font-semibold text-primary">{car.transmission}</p>
                         </div>
                       </div>
@@ -136,7 +136,7 @@ export default async function HomePage({ params }: { params: { locale: string } 
                     
                     <div className="flex items-center justify-between">
                       <div>
-                        <p className="text-sm text-secondary">Price per 10 hours</p>
+                        <p className="text-sm text-secondary">{t('PricePer10Hours')}</p>
                         <p className="text-2xl font-bold text-gradient">Rp {car.pricePerDay.toLocaleString('id-ID')}</p>
                       </div>
                       <div className="w-10 h-10 bg-gradient-to-br from-accent-green to-accent-green-light rounded-xl flex items-center justify-center transform group-hover:scale-110 transition-transform">
@@ -205,7 +205,7 @@ export default async function HomePage({ params }: { params: { locale: string } 
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                     </svg>
-                    <span>Verified</span>
+                    <span>{t('Verified')}</span>
                   </div>
                 </div>
               </div>

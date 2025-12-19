@@ -23,5 +23,19 @@
   "MaxCharacters": "بحد أقصى 500 حرف",
   "ProfessionalDescription": "تأجرة سيارات احترافية مع سائق في بالي — حزمة 10 ساعات تشمل الوقود وسائق محترفين لتجربة بالي المثالية لك.",
   "ChooseFromPremium": "اختر من اختيارنا المميز من السيارات التي تم الحفاظ عليها جيدًا والمثالية لمغامرتك في بالي.",
-  "SeeWhatCustomers": "شاهد ما يقوله عملاؤنا عن تجربتهم مع GiorBaliTour"
+  "SeeWhatCustomers": "شاهد ما يقوله عملاؤنا عن تجربتهم مع GiorBaliTour",
+  "DriverFuelIncluded": "السائق والوقود مشمول",
+  "DriverFuelDescription": "سائق محترف ووقود مميز مشمول في كل باقة",
+  "TenHoursDuration": "مدة 10 ساعات",
+  "TenHoursDescription": "خدمة كاملة اليوم لاستكشاف بالي بوتيرتك الخاصة",
+  "ProfessionalService": "خدمة احترافية",
+  "ProfessionalServiceDescription": "سائقون ذوو خبرة وسيارات جيدة الصيانة",
+  "ExploreOurFleet": "استكشف أسطولنا",
+  "ContactUs": "اتصل بنا",
+  "Available": "متاح",
+  "Capacity": "السعة",
+  "People": "أشخاص",
+  "Transmission": "ناقل الحركة",
+  "PricePer10Hours": "السعر لكل 10 ساعات",
+  "Verified": "موثق"
 }

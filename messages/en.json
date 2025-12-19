@@ -23,6 +23,20 @@
   "MaxCharacters": "Maximum 500 characters",
   "ProfessionalDescription": "Professional car rental with driver included — 10 hours package includes fuel and professional driver for your perfect Bali experience.",
   "ChooseFromPremium": "Choose from our premium selection of well-maintained vehicles perfect for your Bali adventure",
-  "SeeWhatCustomers": "See what our customers say about their experience with GiorBaliTour"
+  "SeeWhatCustomers": "See what our customers say about their experience with GiorBaliTour",
+  "DriverFuelIncluded": "Driver & Fuel Included",
+  "DriverFuelDescription": "Professional driver and premium fuel included in every package",
+  "TenHoursDuration": "10 Hours Duration",
+  "TenHoursDescription": "Full day service to explore Bali at your own pace",
+  "ProfessionalService": "Professional Service",
+  "ProfessionalServiceDescription": "Experienced drivers and well-maintained vehicles",
+  "ExploreOurFleet": "Explore Our Fleet",
+  "ContactUs": "Contact Us",
+  "Available": "Available",
+  "Capacity": "Capacity",
+  "People": "people",
+  "Transmission": "Transmission",
+  "PricePer10Hours": "Price per 10 hours",
+  "Verified": "Verified"
 }
 

@@ -23,5 +23,19 @@
   "MaxCharacters": "最多500字符",
   "ProfessionalDescription": "在巴厘岛租用带司机的专业汽车 — 10小时套餐包含燃料和专业司机，为您的完美巴厘岛体验。",
   "ChooseFromPremium": "从我们精心挑选的维护良好的车辆中选择，非常适合您的巴厘岛冒险",
-  "SeeWhatCustomers": "看看客户对我们GiorBaliTour体验的评价"
+  "SeeWhatCustomers": "看看客户对我们GiorBaliTour体验的评价",
+  "DriverFuelIncluded": "司机与燃油包含",
+  "DriverFuelDescription": "每个套餐都包含专业司机和优质燃油",
+  "TenHoursDuration": "10小时时长",
+  "TenHoursDescription": "全天服务，按自己的节奏探索巴厘岛",
+  "ProfessionalService": "专业服务",
+  "ProfessionalServiceDescription": "经验丰富的司机和维护良好的车辆",
+  "ExploreOurFleet": "探索我们的车队",
+  "ContactUs": "联系我们",
+  "Available": "可预订",
+  "Capacity": "容量",
+  "People": "人",
+  "Transmission": "变速箱",
+  "PricePer10Hours": "10小时价格",
+  "Verified": "已验证"
 }

@@ -23,5 +23,19 @@
   "MaxCharacters": "최대 500자",
   "ProfessionalDescription": "발리에서 운전기가 포함된 전문 자동차 렌탈 — 10시간 패키지에는 연료와 전문 운전기가 포함되어 완벽한 발리 경험을 제공합니다.",
   "ChooseFromPremium": "발리 모험에 완벽한 잘 관리된 프리미엄 차량 중에서 선택하세요.",
-  "SeeWhatCustomers": "고객들이 GiorBaliTour 경험에 대해 말하는 것을 확인하세요"
+  "SeeWhatCustomers": "고객들이 GiorBaliTour 경험에 대해 말하는 것을 확인하세요",
+  "DriverFuelIncluded": "운전기사 및 연료 포함",
+  "DriverFuelDescription": "모든 패키지에 전문 운전기사와 프리미엄 연료가 포함됩니다",
+  "TenHoursDuration": "10시간 이용",
+  "TenHoursDescription": "자신의 속도로 발리를 탐험하는 종일 서비스",
+  "ProfessionalService": "전문 서비스",
+  "ProfessionalServiceDescription": "경험 많은 운전기사와 잘 관리된 차량",
+  "ExploreOurFleet": "차량 탐색",
+  "ContactUs": "연락처",
+  "Available": "예약 가능",
+  "Capacity": "수용 인원",
+  "People": "명",
+  "Transmission": "변속기",
+  "PricePer10Hours": "10시간 가격",
+  "Verified": "확인됨"
 }
