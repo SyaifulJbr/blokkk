@@ -139,15 +139,18 @@ export default function Footer(){
         <div className="border-t border-dark pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-secondary text-sm">
-              © {new Date().getFullYear()} GiorBaliTour. {t('AllRightsReserved')}
+              © 2021 GiorBaliTour. {t('AllRightsReserved')}
             </p>
-            <div className="flex items-center space-x-6">
-              <Link href="#" className="text-secondary hover:text-accent-green transition-colors text-sm">
-                {t('PrivacyPolicy')}
-              </Link>
-              <Link href="#" className="text-secondary hover:text-accent-green transition-colors text-sm">
-                {t('TermsOfService')}
-              </Link>
+            <div className="flex items-center space-x-2">
+              <span className="text-secondary text-sm">Powered by</span>
+              <a 
+                href="https://instagram.com/gior.malik" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-accent-green hover:text-accent-green/80 font-semibold text-sm transition-colors duration-300"
+              >
+                @GiorMalik
+              </a>
             </div>
           </div>
         </div>
