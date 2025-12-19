@@ -1,0 +1,39 @@
+Project: GiorBaliTour - Rental Mobil Bali
+Stack: Next.js 14, TypeScript, Tailwind CSS, Prisma, SQLite
+
+STRUKTUR UTAMA:
+- /src/app/[locale]/          : Halaman publik dengan i18n routing
+- /src/app/[locale]/(tanian)  : Admin dashboard (protected)
+- /src/app/api                : API endpoints (auth, reviews, admin)
+- /src/components/ui          : Reusable components (Header, Footer, ReviewForm)
+- /src/lib/auth.ts            : Auth utilities (prisma, hash, verify password)
+- /src/types/index.ts         : TypeScript interfaces
+- /messages                   : Translation files (8 bahasa)
+- /prisma                     : Database schema & seeding
+
+ADMIN CREDENTIALS:
+Email: admin@giorbalitour.com
+Password: admin123
+
+COMMANDS:
+npm install --legacy-peer-deps
+npx prisma migrate dev --name init
+npx prisma db seed
+npm run dev
+
+FEATURES:
+✓ Landing page dengan featured cars & reviews
+✓ Cars listing (hanya available)
+✓ Car detail page
+✓ About & Contact pages
+✓ Login/Register dengan password hashing
+✓ Admin dashboard CRUD (di /[locale]/tanian/cars)
+✓ Leave review form (di landing page)
+✓ Multi-bahasa (8 bahasa: en, id, zh, ko, ar, tr, ru, pt)
+✓ Responsive design dengan tema hijau & neon shadow
+✓ Database seeding dengan 8 mobil + 10 review
+
+KONTAKT BISNIS (dari halaman contact):
+Email: giorginomalik@gmail.com
+WhatsApp: +6285854965523
+Instagram: @gior.malik
