@@ -76,71 +76,43 @@ export default async function HomePage({ params }: { params: { locale: string } 
       </section>
 
       {/* Featured Cars Section */}
-      <section className="section-gradient py-20">
+      <section className="section-gradient py-16">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-4">{t('FeaturedCars')}</h2>
-            <p className="text-secondary text-lg max-w-2xl mx-auto">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-gradient mb-3">{t('FeaturedCars')}</h2>
+            <p className="text-secondary max-w-xl mx-auto">
               {t('ChooseFromPremium')}
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {featuredCars.map((car, index) => (
               <Link key={car.id} href={`/${params.locale}/cars/${car.id}`} className="group">
                 <div className="card-modern overflow-hidden fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-                  <div className="relative h-48 overflow-hidden rounded-t-2xl">
+                  <div className="relative h-40 overflow-hidden rounded-t-2xl">
                     <img 
                       src={car.imageUrl} 
                       alt={car.name} 
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div className="absolute top-4 right-4">
-                      <div className="bg-accent-green/90 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-medium">
+                    <div className="absolute top-3 right-3">
+                      <div className="bg-accent-green/90 backdrop-blur-sm text-white px-2 py-1 rounded-full text-xs font-medium">
                         {t('Available')}
                       </div>
                     </div>
                   </div>
-                  <div className="p-6">
-                    <h3 className="text-2xl font-bold text-primary mb-3 group-hover:text-accent-green transition-colors">
+                  <div className="p-4">
+                    <h3 className="text-xl font-bold text-primary mb-2 group-hover:text-accent-green transition-colors">
                       {car.name}
                     </h3>
-                    <p className="text-secondary mb-4 line-clamp-2">{car.description}</p>
-                    
-                    <div className="grid grid-cols-2 gap-4 mb-4">
-                      <div className="flex items-center space-x-2">
-                        <div className="w-8 h-8 bg-dark-tertiary rounded-lg flex items-center justify-center">
-                          <svg className="w-4 h-4 text-accent-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                          </svg>
-                        </div>
-                        <div>
-                          <p className="text-xs text-secondary">{t('Capacity')}</p>
-                          <p className="text-sm font-semibold text-primary">{car.capacity} {t('People')}</p>
-                        </div>
-                      </div>
-                      
-                      <div className="flex items-center space-x-2">
-                        <div className="w-8 h-8 bg-dark-tertiary rounded-lg flex items-center justify-center">
-                          <svg className="w-4 h-4 text-accent-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
-                          </svg>
-                        </div>
-                        <div>
-                          <p className="text-xs text-secondary">{t('Transmission')}</p>
-                          <p className="text-sm font-semibold text-primary">{car.transmission}</p>
-                        </div>
-                      </div>
-                    </div>
-                    
                     <div className="flex items-center justify-between">
                       <div>
                         <p className="text-sm text-secondary">{t('PricePer10Hours')}</p>
-                        <p className="text-2xl font-bold text-gradient">Rp {car.pricePerDay.toLocaleString('id-ID')}</p>
+                        <p className="text-lg font-bold text-gradient">Rp {car.pricePerDay.toLocaleString('id-ID')}</p>
                       </div>
-                      <div className="w-10 h-10 bg-gradient-to-br from-accent-green to-accent-green-light rounded-xl flex items-center justify-center transform group-hover:scale-110 transition-transform">
-                        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <div className="w-8 h-8 bg-gradient-to-br from-accent-green to-accent-green-light rounded-lg flex items-center justify-center transform group-hover:scale-110 transition-transform">
+                        <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                         </svg>
                       </div>
@@ -150,81 +122,160 @@ export default async function HomePage({ params }: { params: { locale: string } 
               </Link>
             ))}
           </div>
+          
+          <div className="text-center">
+            <Link 
+              href={`/${params.locale}/cars`} 
+              className="inline-flex items-center space-x-2 btn-modern px-6 py-3"
+            >
+              <span>{t('ViewAllCars')}</span>
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          </div>
         </div>
       </section>
 
-      {/* Reviews Section */}
-      <section className="py-20">
+      {/* Quick Reviews Preview */}
+      <section className="py-16">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-4">{t('CustomerReviews')}</h2>
-            <p className="text-secondary text-lg max-w-2xl mx-auto">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-gradient mb-3">{t('CustomerReviews')}</h2>
+            <p className="text-secondary max-w-xl mx-auto">
               {t('SeeWhatCustomers')}
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {latestReviews.map((review, index) => (
-              <div key={review.id} className="card-modern p-6 fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-                <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-12 h-12 bg-gradient-to-br from-accent-green to-accent-green-light rounded-full flex items-center justify-center">
-                      <span className="text-white font-bold text-lg">
-                        {review.userName.charAt(0).toUpperCase()}
-                      </span>
-                    </div>
-                    <div>
-                      <p className="font-semibold text-primary">{review.userName}</p>
-                      <div className="flex items-center space-x-1">
-                        {[...Array(5)].map((_, i) => (
-                          <span 
-                            key={i} 
-                            className={`text-sm ${
-                              i < review.rating 
-                                ? 'text-accent-yellow drop-shadow-glow' 
-                                : 'text-muted'
-                            }`}
-                          >
-                            ★
-                          </span>
-                        ))}
-                      </div>
+              <div key={review.id} className="card-modern p-4 fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+                <div className="flex items-center space-x-3 mb-3">
+                  <div className="w-10 h-10 bg-gradient-to-br from-accent-green to-accent-green-light rounded-full flex items-center justify-center">
+                    <span className="text-white font-bold text-sm">
+                      {review.userName.charAt(0).toUpperCase()}
+                    </span>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-primary text-sm">{review.userName}</p>
+                    <div className="flex items-center space-x-1">
+                      {[...Array(5)].map((_, i) => (
+                        <span 
+                          key={i} 
+                          className={`text-xs ${
+                            i < review.rating 
+                              ? 'text-accent-yellow drop-shadow-glow' 
+                              : 'text-muted'
+                          }`}
+                        >
+                          ★
+                        </span>
+                      ))}
                     </div>
                   </div>
                 </div>
                 
-                <p className="text-secondary mb-4 line-clamp-3">"{review.comment}"</p>
-                
-                <div className="flex items-center justify-between text-sm text-muted">
-                  <span>{new Date(review.createdAt).toLocaleDateString('en-US', { 
-                    year: 'numeric', 
-                    month: 'short', 
-                    day: 'numeric' 
-                  })}</span>
-                  <div className="flex items-center space-x-1">
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                    </svg>
-                    <span>{t('Verified')}</span>
-                  </div>
-                </div>
+                <p className="text-secondary text-sm line-clamp-2">"{review.comment}"</p>
               </div>
             ))}
+          </div>
+          
+          <div className="text-center">
+            <Link 
+              href={`/${params.locale}/reviews`} 
+              className="inline-flex items-center space-x-2 btn-accent px-6 py-3"
+            >
+              <span>{t('ReadAllReviews')}</span>
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Review Form Section */}
-      <section className="section-gradient py-20">
+      {/* Navigation Section */}
+      <section className="section-gradient py-16">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-4">{t('LeaveReview')}</h2>
-            <p className="text-secondary text-lg max-w-2xl mx-auto">
-              {t('YourReviewHelps')}
+            <h2 className="text-3xl md:text-4xl font-bold text-gradient mb-3">{t('ExploreMore')}</h2>
+            <p className="text-secondary max-w-xl mx-auto">
+              {t('DiscoverEverything')}
             </p>
           </div>
           
-          <ReviewForm />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Link href={`/${params.locale}/cars`} className="group">
+              <div className="card-modern p-6 text-center h-full hover:border-accent-green transition-all duration-300">
+                <div className="w-16 h-16 bg-gradient-to-br from-accent-green to-accent-green-light rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-primary mb-2 group-hover:text-accent-green transition-colors">{t('AllCars')}</h3>
+                <p className="text-secondary text-sm mb-4">{t('BrowseOurFleet')}</p>
+                <div className="inline-flex items-center text-accent-green font-medium text-sm">
+                  <span>{t('ViewAllCars')}</span>
+                  <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+            </Link>
+            
+            <Link href={`/${params.locale}/contact`} className="group">
+              <div className="card-modern p-6 text-center h-full hover:border-accent-yellow transition-all duration-300">
+                <div className="w-16 h-16 bg-gradient-to-br from-accent-yellow to-accent-yellow-light rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                  <svg className="w-8 h-8 text-dark-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-primary mb-2 group-hover:text-accent-yellow transition-colors">{t('ContactUs')}</h3>
+                <p className="text-secondary text-sm mb-4">{t('GetInTouch')}</p>
+                <div className="inline-flex items-center text-accent-yellow font-medium text-sm">
+                  <span>{t('ContactNow')}</span>
+                  <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+            </Link>
+            
+            <Link href={`/${params.locale}/about`} className="group">
+              <div className="card-modern p-6 text-center h-full hover:border-accent-green transition-all duration-300">
+                <div className="w-16 h-16 bg-gradient-to-br from-accent-green to-accent-green-light rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-primary mb-2 group-hover:text-accent-green transition-colors">{t('AboutUs')}</h3>
+                <p className="text-secondary text-sm mb-4">{t('LearnMore')}</p>
+                <div className="inline-flex items-center text-accent-green font-medium text-sm">
+                  <span>{t('AboutUs')}</span>
+                  <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Simple Review Form */}
+      <section className="py-16">
+        <div className="container mx-auto px-6">
+          <div className="max-w-2xl mx-auto">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold text-gradient mb-3">{t('QuickReview')}</h2>
+              <p className="text-secondary">
+                {t('ShareYourExperience')}
+              </p>
+            </div>
+            
+            <ReviewForm />
+          </div>
         </div>
       </section>
     </div>

@@ -5,245 +5,29 @@ $ next dev
 
  ✓ Starting...
  ✓ Ready in 2.8s
+ ○ Compiling / ...
+ ✓ Compiled / in 4.1s (460 modules)
+ GET / 307 in 4537ms
  ○ Compiling /[locale] ...
- ✓ Compiled /[locale] in 1598ms (653 modules)
- ⚠ Unsupported metadata themeColor is configured in metadata export in /zh. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /zh. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- GET /zh 200 in 2624ms
- ⚠ Unsupported metadata themeColor is configured in metadata export in /en. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /en. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- GET /en 200 in 78ms
- ⚠ Unsupported metadata themeColor is configured in metadata export in /id. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /id. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- GET /id 200 in 63ms
- ⚠ Unsupported metadata themeColor is configured in metadata export in /zh. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /zh. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- GET /zh 200 in 57ms
- ⚠ Unsupported metadata themeColor is configured in metadata export in /ko. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /ko. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- GET /ko 200 in 55ms
- ⚠ Unsupported metadata themeColor is configured in metadata export in /ar. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /ar. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- GET /ar 200 in 61ms
- ⚠ Unsupported metadata themeColor is configured in metadata export in /tr. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /tr. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- GET /tr 200 in 54ms
- ⚠ Unsupported metadata themeColor is configured in metadata export in /ru. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /ru. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- GET /ru 200 in 58ms
- ⚠ Unsupported metadata themeColor is configured in metadata export in /pt. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /pt. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- GET /pt 200 in 60ms
- ⚠ Unsupported metadata themeColor is configured in metadata export in /zh. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /zh. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- GET /zh 200 in 63ms
- ⚠ Unsupported metadata themeColor is configured in metadata export in /zh. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /zh. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- GET /zh 200 in 50ms
- ⚠ Unsupported metadata themeColor is configured in metadata export in /ko. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /ko. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- GET /ko 200 in 72ms
- ⚠ Unsupported metadata themeColor is configured in metadata export in /manifest.json. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /manifest.json. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⨯ Error: Cannot find module './manifest.json.json'
-    at <anonymous> (/home/z/my-project/.next/server/app/[locale]/page.js:58:16)
-    at processTicksAndRejections (native:7:39)
-digest: "1411625452"
- ⚠ Unsupported metadata themeColor is configured in metadata export in /manifest.json. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /manifest.json. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- GET /manifest.json 404 in 67ms
- ⚠ Unsupported metadata themeColor is configured in metadata export in /ko. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /ko. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- GET /ko 200 in 65ms
- ⚠ Unsupported metadata themeColor is configured in metadata export in /manifest.json. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /manifest.json. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⨯ Error: Cannot find module './manifest.json.json'
-    at <anonymous> (/home/z/my-project/.next/server/app/[locale]/page.js:58:16)
-    at processTicksAndRejections (native:7:39)
-digest: "1411625452"
- ⚠ Unsupported metadata themeColor is configured in metadata export in /manifest.json. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /manifest.json. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- GET /manifest.json 404 in 46ms
- ✓ Compiled / in 440ms (657 modules)
- ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- GET / 307 in 631ms
- ⚠ Unsupported metadata themeColor is configured in metadata export in /en. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /en. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- GET /en 200 in 301ms
- ✓ Compiled in 1281ms (671 modules)
- ✓ Compiled in 439ms (671 modules)
- ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- GET / 307 in 185ms
- ⚠ Unsupported metadata themeColor is configured in metadata export in /en. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /en. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- GET /en 200 in 128ms
- ✓ Compiled in 364ms (671 modules)
- ⚠ Unsupported metadata themeColor is configured in metadata export in /ko. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /ko. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- GET /ko 200 in 320ms
- ⚠ Unsupported metadata themeColor is configured in metadata export in /manifest.json. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /manifest.json. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⨯ Error: Cannot find module './manifest.json.json'
-    at <anonymous> (/home/z/my-project/.next/server/app/[locale]/page.js:58:16)
-    at processTicksAndRejections (native:7:39)
-digest: "1411625452"
- ⚠ Unsupported metadata themeColor is configured in metadata export in /manifest.json. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /manifest.json. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- GET /manifest.json 404 in 60ms
- ⚠ Unsupported metadata themeColor is configured in metadata export in /id. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /id. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata themeColor is configured in metadata export in /en. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /en. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata themeColor is configured in metadata export in /. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- GET / 307 in 55ms
- ⚠ Unsupported metadata themeColor is configured in metadata export in /en. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /en. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- GET /en 200 in 86ms
- ✓ Compiled in 417ms (671 modules)
- ✓ Compiled in 217ms (368 modules)
- ✓ Compiled in 137ms (368 modules)
- ✓ Compiled in 420ms (671 modules)
- ✓ Compiled in 149ms (368 modules)
- ✓ Compiled in 235ms (368 modules)
- ✓ Compiled in 126ms (368 modules)
- ✓ Compiled in 165ms (368 modules)
- ✓ Compiled in 115ms (368 modules)
- ✓ Compiled in 140ms (365 modules)
- ○ Compiling /_not-found ...
- ✓ Compiled /_not-found in 680ms (657 modules)
- ⚠ Unsupported metadata themeColor is configured in metadata export in /en. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /en. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- GET /en 404 in 925ms
- ⚠ Unsupported metadata themeColor is configured in metadata export in /en. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /en. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⨯ error: ENOENT reading "/home/z/my-project/.next/server/_rsc_messages_en_json.js"
- ⨯ error: ENOENT reading "/home/z/my-project/.next/server/_rsc_messages_en_json.js"
- ⨯ error: ENOENT reading "/home/z/my-project/.next/server/_rsc_messages_en_json.js"
- ⚠ Unsupported metadata themeColor is configured in metadata export in /en. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /en. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- GET /en 500 in 92ms
-1 | (()=>{"use strict";var e={914:e=>{e.exports=(e,t=process.argv)=>{const r=e.startsWith("-")?"":e.length===1?"-":"--";const i=t.indexOf(r+e);const s=t.indexOf("--");return i!==-1&&(s===-1||i<s)}},460:(e,t,r)=>{Object.defineProperty(t,"__esModule",{value:true});t["default"]=void 0;var i=_interopRequireDefault(r(552));var s=r(582);function _interopRequireDefault(e){return e&&e.__esModule?e:{default:e}}function _defineProperty(e,t,r){if(t in e){Object.defineProperty(e,t,{value:r,enumerable:true,configurable:true,writable:true})}else{e[t]=r}return e}class Farm{constructor(e,t,r={}){var s,o;_defineProperty(this,"_computeWorkerKey",void 0);_defineProperty(this,"_workerSchedulingPolicy",void 0);_defineProperty(this,"_cacheKeys",Object.create(null));_defineProperty(this,"_locks",[]);_defineProperty(this,"_offset",0);_defineProperty(this,"_taskQueue",void 0);this._numOfWorkers=e;this._callback=t;this._computeWorkerKey=r.computeWorkerKey;this._workerSchedulingPolicy=(s=r.workerSchedulingPolicy)!==null&&s!==void 0?s:"roun
-
-error: ResolveMessage is not constructable
-      at _onMessage (/home/z/my-project/node_modules/next/dist/compiled/jest-worker/index.js:1:12123)
-      at emit (node:events:98:22)
-      at #emitIpcMessage (node:child_process:716:14)
-
- ⨯ uncaughtException: 1 | (()=>{"use strict";var e={914:e=>{e.exports=(e,t=process.argv)=>{const r=e.startsWith("-")?"":e.length===1?"-":"--";const i=t.indexOf(r+e);const s=t.indexOf("--");return i!==-1&&(s===-1||i<s)}},460:(e,t,r)=>{Object.defineProperty(t,"__esModule",{value:true});t["default"]=void 0;var i=_interopRequireDefault(r(552));var s=r(582);function _interopRequireDefault(e){return e&&e.__esModule?e:{default:e}}function _defineProperty(e,t,r){if(t in e){Object.defineProperty(e,t,{value:r,enumerable:true,configurable:true,writable:true})}else{e[t]=r}return e}class Farm{constructor(e,t,r={}){var s,o;_defineProperty(this,"_computeWorkerKey",void 0);_defineProperty(this,"_workerSchedulingPolicy",void 0);_defineProperty(this,"_cacheKeys",Object.create(null));_defineProperty(this,"_locks",[]);_defineProperty(this,"_offset",0);_defineProperty(this,"_taskQueue",void 0);this._numOfWorkers=e;this._callback=t;this._computeWorkerKey=r.computeWorkerKey;this._workerSchedulingPolicy=(s=r.workerSchedulingPolicy)!==null&&s!==void 0?s:"roun
-
-error: ResolveMessage is not constructable
-      at ResolveMessage (unknown:1:1)
-      at _onMessage (/home/z/my-project/node_modules/next/dist/compiled/jest-worker/index.js:1:12115)
-      at emit (node:events:98:22)
-      at #emitIpcMessage (node:child_process:716:14)
-
- ⨯ uncaughtException: 1 | (()=>{"use strict";var e={914:e=>{e.exports=(e,t=process.argv)=>{const r=e.startsWith("-")?"":e.length===1?"-":"--";const i=t.indexOf(r+e);const s=t.indexOf("--");return i!==-1&&(s===-1||i<s)}},460:(e,t,r)=>{Object.defineProperty(t,"__esModule",{value:true});t["default"]=void 0;var i=_interopRequireDefault(r(552));var s=r(582);function _interopRequireDefault(e){return e&&e.__esModule?e:{default:e}}function _defineProperty(e,t,r){if(t in e){Object.defineProperty(e,t,{value:r,enumerable:true,configurable:true,writable:true})}else{e[t]=r}return e}class Farm{constructor(e,t,r={}){var s,o;_defineProperty(this,"_computeWorkerKey",void 0);_defineProperty(this,"_workerSchedulingPolicy",void 0);_defineProperty(this,"_cacheKeys",Object.create(null));_defineProperty(this,"_locks",[]);_defineProperty(this,"_offset",0);_defineProperty(this,"_taskQueue",void 0);this._numOfWorkers=e;this._callback=t;this._computeWorkerKey=r.computeWorkerKey;this._workerSchedulingPolicy=(s=r.workerSchedulingPolicy)!==null&&s!==void 0?s:"roun
-
-error: ResolveMessage is not constructable
-      at ResolveMessage (unknown:1:1)
-      at _onMessage (/home/z/my-project/node_modules/next/dist/compiled/jest-worker/index.js:1:12115)
-      at emit (node:events:98:22)
-      at #emitIpcMessage (node:child_process:716:14)
-
- ⚠ Unsupported metadata themeColor is configured in metadata export in /en. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /en. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⨯ error: ENOENT reading "/home/z/my-project/.next/server/_rsc_messages_en_json.js"
- ⨯ error: ENOENT reading "/home/z/my-project/.next/server/_rsc_messages_en_json.js"
- ⨯ error: ENOENT reading "/home/z/my-project/.next/server/_rsc_messages_en_json.js"
- ⚠ Unsupported metadata themeColor is configured in metadata export in /en. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /en. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- GET /en 500 in 44ms
- ⚠ Unsupported metadata themeColor is configured in metadata export in /en. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /en. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⨯ error: ENOENT reading "/home/z/my-project/.next/server/_rsc_messages_en_json.js"
- ⨯ error: ENOENT reading "/home/z/my-project/.next/server/_rsc_messages_en_json.js"
- ⨯ error: ENOENT reading "/home/z/my-project/.next/server/_rsc_messages_en_json.js"
- ⚠ Unsupported metadata themeColor is configured in metadata export in /en. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- ⚠ Unsupported metadata colorScheme is configured in metadata export in /en. Please move it to viewport export instead.
-Read more: https://nextjs.org/docs/app/api-reference/functions/generate-viewport
- GET /en 500 in 44ms
-[?25h
+ ✓ Compiled /[locale] in 2.4s (671 modules)
+ GET /en 200 in 3351ms
+ GET /en 200 in 95ms
+ ⨯ src/app/[locale]/cars/page.tsx
+You cannot have two parallel pages that resolve to the same path. Please check /[locale]/(tanian)/cars/page and /[locale]/cars/page. Refer to the route group docs for more information: https://nextjs.org/docs/app/building-your-application/routing/route-groups
+ ○ Compiling /[locale]/cars ...
+ ⨯ src/app/[locale]/(tanian)/cars/page.tsx
+You cannot have two parallel pages that resolve to the same path. Please check /[locale]/(tanian)/cars/page and /[locale]/cars/page. Refer to the route group docs for more information: https://nextjs.org/docs/app/building-your-application/routing/route-groups
+ ⨯ src/app/[locale]/(tanian)/cars/page.tsx
+You cannot have two parallel pages that resolve to the same path. Please check /[locale]/(tanian)/cars/page and /[locale]/cars/page. Refer to the route group docs for more information: https://nextjs.org/docs/app/building-your-application/routing/route-groups
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⨯ src/app/[locale]/(tanian)/cars/page.tsx
+You cannot have two parallel pages that resolve to the same path. Please check /[locale]/(tanian)/cars/page and /[locale]/cars/page. Refer to the route group docs for more information: https://nextjs.org/docs/app/building-your-application/routing/route-groups
+ GET /en/cars 500 in 5299ms
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/home/z/my-project/.next/cache/webpack/client-development-fallback/0.pack.gz_' -> '/home/z/my-project/.next/cache/webpack/client-development-fallback/0.pack.gz'
+ GET /en 500 in 396ms
+ ⨯ src/app/[locale]/(tanian)/cars/page.tsx
+You cannot have two parallel pages that resolve to the same path. Please check /[locale]/(tanian)/cars/page and /[locale]/cars/page. Refer to the route group docs for more information: https://nextjs.org/docs/app/building-your-application/routing/route-groups
+ ⨯ src/app/[locale]/(tanian)/cars/page.tsx
+You cannot have two parallel pages that resolve to the same path. Please check /[locale]/(tanian)/cars/page and /[locale]/cars/page. Refer to the route group docs for more information: https://nextjs.org/docs/app/building-your-application/routing/route-groups
+ GET /id 500 in 404ms
+ GET / 500 in 410ms

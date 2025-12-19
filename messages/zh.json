@@ -38,6 +38,18 @@
   "Transmission": "变速箱",
   "PricePer10Hours": "10小时价格",
   "Verified": "已验证",
+  "ViewAllCars": "查看所有汽车",
+  "ReadAllReviews": "阅读所有评论",
+  "ExploreMore": "探索更多",
+  "DiscoverEverything": "发现我们为您的完美巴厘岛体验提供的一切",
+  "AllCars": "所有汽车",
+  "BrowseOurFleet": "浏览我们全部的优质车队",
+  "ContactNow": "立即联系",
+  "GetInTouch": "联系我们进行预订和咨询",
+  "AboutUs": "关于我们",
+  "LearnMore": "了解更多关于我们的故事和承诺",
+  "QuickReview": "快速评论",
+  "ShareYourExperience": "快速轻松地分享您的体验",
   "FooterDescription": "值得信赖的巴厘岛租车服务，提供专业服务和难忘的体验。",
   "Contact": "联系",
   "Navigation": "导航",
@@ -45,6 +57,5 @@
   "Available247Description": "我们随时为您提供巴厘岛旅行需求帮助",
   "AllRightsReserved": "版权所有。",
   "PrivacyPolicy": "隐私政策",
-  "TermsOfService": "服务条款",
-  "ContactUs": "联系我们"
+  "TermsOfService": "服务条款"
 }

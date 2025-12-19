@@ -16,6 +16,11 @@ export function generateStaticParams() {
   return locales.map(locale => ({ locale }))
 }
 
+export const viewport = {
+  themeColor: '#0a0a0a',
+  colorScheme: 'dark',
+}
+
 export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = params
   
@@ -28,10 +33,6 @@ export default async function LocaleLayout({ children, params }: Props) {
   
   return (
     <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'} className="dark">
-      <head>
-        <meta name="theme-color" content="#0a0a0a" />
-        <meta name="color-scheme" content="dark" />
-      </head>
       <body className="bg-dark-primary text-primary antialiased">
         <NextIntlClientProvider messages={messages} locale={locale}>
           <div className="min-h-screen flex flex-col">

@@ -38,6 +38,18 @@
   "Transmission": "ناقل الحركة",
   "PricePer10Hours": "السعر لكل 10 ساعات",
   "Verified": "موثق",
+  "ViewAllCars": "عرض كل السيارات",
+  "ReadAllReviews": "اقرأ جميع التقييمات",
+  "ExploreMore": "استكشف أكثر",
+  "DiscoverEverything": "اكتشف كل ما نقدمه لتجربة بالي المثالية",
+  "AllCars": "كل السيارات",
+  "BrowseOurFleet": "تصفح أسطولنا الكامل من السيارات المميزة",
+  "ContactNow": "اتصل الآن",
+  "GetInTouch": "تواصل معنا للحجوزات والاستفسارات",
+  "AboutUs": "حولنا",
+  "LearnMore": "اعرف المزيد عن قصتنا والتزامنا",
+  "QuickReview": "تقييم سريع",
+  "ShareYourExperience": "شارك تجربتك بسرعة وسهولة",
   "FooterDescription": "خدمة تأجير سيارات موثوقة في بالي مع خدمة احترافية وتجارب لا تُنسى.",
   "Contact": "اتصل بنا",
   "Navigation": "التنقل",
@@ -45,6 +57,5 @@
   "Available247Description": "نحن هنا دائماً لمساعدتك في احتياجات سفرك في بالي",
   "AllRightsReserved": "جميع الحقوق محفوظة.",
   "PrivacyPolicy": "سياسة الخصوصية",
-  "TermsOfService": "شروط الخدمة",
-  "ContactUs": "اتصل بنا"
+  "TermsOfService": "شروط الخدمة"
 }

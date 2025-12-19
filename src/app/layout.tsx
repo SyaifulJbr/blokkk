@@ -30,7 +30,9 @@ export const metadata = {
     icon: '/favicon.ico',
     apple: '/apple-touch-icon.png',
   },
-  manifest: '/manifest.json',
+}
+
+export const viewport = {
   themeColor: '#0a0a0a',
   colorScheme: 'dark',
 }
@@ -41,10 +43,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="dark">
+    <html className="dark">
       <head>
-        <meta name="theme-color" content="#0a0a0a" />
-        <meta name="color-scheme" content="dark" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
