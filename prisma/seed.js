@@ -22,14 +22,14 @@ async function main() {
   });
 
   const cars = [
-    { name: 'All New Avanza', capacity: 6, transmission: 'MANUAL', pricePerDay: 550000, imageUrl: 'https://www.giorbalitour.com/images/cars/all-new-avanza.png', description: 'Mobil keluarga yang nyaman dan irit untuk perjalanan di Bali.' },
-    { name: 'Avanza', capacity: 6, transmission: 'MANUAL', pricePerDay: 500000, imageUrl: 'https://www.giorbalitour.com/images/cars/avanza.png', description: 'Pilihan ekonomis untuk perjalanan Anda.' },
-    { name: 'Hiace Commuter', capacity: 12, transmission: 'MANUAL', pricePerDay: 900000, imageUrl: 'https://www.giorbalitour.com/images/cars/hiace-commuter.png', description: 'Sempurna untuk rombongan besar.' },
-    { name: 'Hiace Premio', capacity: 12, transmission: 'AUTOMATIC', pricePerDay: 1100000, imageUrl: 'https://www.giorbalitour.com/images/cars/hiace-premio.png', description: 'Versi premium dari Hiace.' },
-    { name: 'Innova Reborn', capacity: 7, transmission: 'AUTOMATIC', pricePerDay: 750000, imageUrl: 'https://www.giorbalitour.com/images/cars/innova-reborn.webp', description: 'Mobil MPV medium yang elegan.' },
-    { name: 'Toyota Alphard', capacity: 7, transmission: 'AUTOMATIC', pricePerDay: 1500000, imageUrl: 'https://www.giorbalitour.com/images/cars/toyota-alphard.png.webp', description: 'Luxury class, pengalaman premium.' },
-    { name: 'Toyota Vellfire', capacity: 7, transmission: 'AUTOMATIC', pricePerDay: 1500000, imageUrl: 'https://www.giorbalitour.com/images/cars/toyota-vellfire.png', description: 'Kemewahan dan gaya dalam satu paket.' },
-    { name: 'Xpander', capacity: 7, transmission: 'MANUAL', pricePerDay: 600000, imageUrl: 'https://www.giorbalitour.com/images/cars/xpander.png', description: 'Mobil modern dan tangguh.' }
+    { name: 'All New Avanza', capacity: 6, transmission: 'MANUAL', pricePerDay: 550000, imageUrl: '/images/cars/all-new-avanza.png', description: 'Mobil keluarga yang nyaman dan irit untuk perjalanan di Bali.' },
+    { name: 'Avanza', capacity: 6, transmission: 'MANUAL', pricePerDay: 500000, imageUrl: '/images/cars/avanza.png', description: 'Pilihan ekonomis untuk perjalanan Anda.' },
+    { name: 'Hiace Commuter', capacity: 12, transmission: 'MANUAL', pricePerDay: 900000, imageUrl: '/images/cars/hiace-commuter.png', description: 'Sempurna untuk rombongan besar.' },
+    { name: 'Hiace Premio', capacity: 12, transmission: 'AUTOMATIC', pricePerDay: 1100000, imageUrl: '/images/cars/hiace-premio.png', description: 'Versi premium dari Hiace.' },
+    { name: 'Innova Reborn', capacity: 7, transmission: 'AUTOMATIC', pricePerDay: 750000, imageUrl: '/images/cars/innova-reborn.webp', description: 'Mobil MPV medium yang elegan.' },
+    { name: 'Toyota Alphard', capacity: 7, transmission: 'AUTOMATIC', pricePerDay: 1500000, imageUrl: '/images/cars/toyota-alphard.webp', description: 'Luxury class, pengalaman premium.' },
+    { name: 'Toyota Vellfire', capacity: 7, transmission: 'AUTOMATIC', pricePerDay: 1500000, imageUrl: '/images/cars/toyota-vellfire.png', description: 'Kemewahan dan gaya dalam satu paket.' },
+    { name: 'Xpander', capacity: 7, transmission: 'MANUAL', pricePerDay: 600000, imageUrl: '/images/cars/xpander.png', description: 'Mobil modern dan tangguh.' }
   ];
 
   await prisma.car.createMany({ data: cars });
