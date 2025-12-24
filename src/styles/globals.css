@@ -1,0 +1,308 @@
+:root {
+  /* Dark Grey Theme */
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #111111;
+  --bg-tertiary: #1a1a1a;
+  --bg-card: #1f1f1f;
+  --bg-hover: #2a2a2a;
+  
+  /* Text Colors */
+  --text-primary: #ffffff;
+  --text-secondary: #b3b3b3;
+  --text-muted: #808080;
+  
+  /* Accent Colors */
+  --accent-green: #10b981;
+  --accent-green-light: #34d399;
+  --accent-yellow: #fbbf24;
+  --accent-yellow-light: #fde047;
+  
+  /* Border and Shadows */
+  --border-color: #333333;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.6);
+  
+  /* Modern Neon Effects */
+  --neon-green: 0 0 20px rgba(16, 185, 129, 0.5);
+  --neon-yellow: 0 0 20px rgba(251, 191, 36, 0.5);
+  --glow-green: 0 0 30px rgba(16, 185, 129, 0.3);
+  --glow-yellow: 0 0 30px rgba(251, 191, 36, 0.3);
+  
+  /* Gradients */
+  --gradient-dark: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  --gradient-card: linear-gradient(135deg, #1f1f1f 0%, #2a2a2a 100%);
+  --gradient-button: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  --gradient-accent: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base Styles */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Custom Utility Classes */
+.bg-dark-primary {
+  background-color: var(--bg-primary);
+}
+
+.bg-dark-secondary {
+  background-color: var(--bg-secondary);
+}
+
+.bg-dark-tertiary {
+  background-color: var(--bg-tertiary);
+}
+
+.bg-card {
+  background-color: var(--bg-card);
+}
+
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.border-dark {
+  border-color: var(--border-color);
+}
+
+/* Modern Card Styles */
+.card-modern {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-modern::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent-green), var(--accent-yellow));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-modern:hover::before {
+  opacity: 1;
+}
+
+.card-modern:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--accent-green);
+}
+
+/* Modern Button Styles */
+.btn-modern {
+  background: var(--gradient-button);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.btn-modern::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+.btn-modern:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.btn-modern:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--glow-green);
+}
+
+.btn-accent {
+  background: var(--gradient-accent);
+  color: var(--bg-primary);
+}
+
+.btn-accent:hover {
+  box-shadow: var(--glow-yellow);
+}
+
+/* Modern Input Styles */
+.input-modern {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 12px 16px;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+.input-modern:focus {
+  outline: none;
+  border-color: var(--accent-green);
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+/* Neon Effects */
+.neon-green {
+  box-shadow: var(--neon-green);
+}
+
+.neon-yellow {
+  box-shadow: var(--neon-yellow);
+}
+
+.glow-green {
+  box-shadow: var(--glow-green);
+}
+
+.glow-yellow {
+  box-shadow: var(--glow-yellow);
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-green);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-green-light);
+}
+
+/* Selection Styles */
+::selection {
+  background: var(--accent-green);
+  color: white;
+}
+
+/* Focus Styles */
+.focus-ring:focus {
+  outline: 2px solid var(--accent-green);
+  outline-offset: 2px;
+}
+
+/* Animation Classes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Responsive Design Helper */
+@media (max-width: 768px) {
+  .card-modern {
+    border-radius: 12px;
+  }
+  
+  .btn-modern {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+/* Custom Components */
+.hero-gradient {
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 50%, var(--bg-tertiary) 100%);
+}
+
+.section-gradient {
+  background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--accent-green), var(--accent-yellow));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--accent-green), var(--accent-yellow));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.border-gradient {
+  position: relative;
+  background: linear-gradient(var(--bg-card), var(--bg-card)) padding-box,
+              linear-gradient(135deg, var(--accent-green), var(--accent-yellow)) border-box;
+  border: 2px solid transparent;
+}
