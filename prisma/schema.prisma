@@ -1,0 +1,45 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                String    @id @default(cuid())
+  email             String    @unique
+  name              String
+  password          String
+  role              String    @default("USER")
+  reviews           Review[]
+  // OTP and Email Verification
+  otp               String?
+  otpExpiry         DateTime?
+  isVerified        Boolean   @default(false)
+  // Account Lockout
+  failedAttempts    Int       @default(0)
+  lockUntil         DateTime?
+}
+
+model Car {
+  id           String @id @default(cuid())
+  name         String
+  capacity     Int
+  transmission String
+  pricePerDay  Int
+  imageUrl     String
+  description  String
+  isAvailable  Boolean @default(true)
+}
+
+model Review {
+  id        String   @id @default(cuid())
+  userName  String
+  comment   String
+  rating    Int
+  createdAt DateTime @default(now())
+  userId    String?
+  user      User?    @relation(fields: [userId], references: [id])
+}
